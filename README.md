@@ -30,6 +30,17 @@ Todos os dados são salvos localmente no dispositivo usando **AsyncStorage**, si
 
 ### 1. Clonar o repositório
 
-```bash
+
 git clone https://github.com/SEU-USUARIO/protracker-datawork.git
 cd protracker-datawork
+
+### 2. Instalar dependências
+
+npm install
+# ou
+yarn install
+
+### 3. Rodar o app (modo desenvolvimento)
+
+npx expo start
+
