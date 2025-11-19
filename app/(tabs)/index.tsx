@@ -84,17 +84,10 @@ export default function HomeScreen() {
     );
   };
 
+  // >>> AQUI: delete direto, sem Alert <<<
   const deleteTask = (id: string) => {
-    Alert.alert("Confirmar", "Tem certeza que deseja excluir esta tarefa?", [
-      { text: "Cancelar", style: "cancel" },
-      {
-        text: "Excluir",
-        style: "destructive",
-        onPress: () => {
-          setTasks((prev) => prev.filter((task) => task.id !== id));
-        },
-      },
-    ]);
+    console.log("Removendo tarefa com id:", id);
+    setTasks((prev) => prev.filter((task) => task.id !== id));
   };
 
   const getFilteredTasks = (): Task[] => {
