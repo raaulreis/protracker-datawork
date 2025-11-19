@@ -1,50 +1,46 @@
-# Welcome to your Expo app 👋
+# ProTracker – Dashboard Pessoal de Produtividade (DataWork)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto foi desenvolvido como parte da **Global Solution – 2º semestre de 2025** com o tema  
+**“DataWork: Inteligência Analítica no Mundo Corporativo”**.
 
-## Get started
+O **ProTracker** é um aplicativo simples de produtividade que permite ao usuário:
 
-1. Install dependencies
+- Cadastrar tarefas
+- Marcar o status como **Pendente**, **Em andamento** ou **Concluída**
+- Visualizar um pequeno **dashboard de performance** com:
+  - Total de tarefas
+  - Quantas estão concluídas, em andamento e pendentes
+  - Percentual de tarefas concluídas
 
-   ```bash
-   npm install
-   ```
+Todos os dados são salvos localmente no dispositivo usando **AsyncStorage**, simulando um cenário de *DataWork pessoal* onde informações do próprio usuário são transformadas em indicadores de performance.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠 Tecnologias utilizadas
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- Expo Router (layout em abas)
+- @react-native-async-storage/async-storage
+- TypeScript
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ⚙️ Como configurar o ambiente e rodar o projeto
 
-## Get a fresh project
+### 1. Clonar o repositório
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
+git clone https://github.com/SEU-USUARIO/protracker-datawork.git
+cd protracker-datawork
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Instalar dependências
 
-## Learn more
+npm install
+# ou
+yarn install
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Rodar o app (modo desenvolvimento)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+npx expo start
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
